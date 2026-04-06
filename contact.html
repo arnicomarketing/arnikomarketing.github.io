@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Contact Arnico Marketing — get your free marketing audit, reach us at arnicomarketing@gmail.com, or fill out the contact form to start your growth journey."/>
+<title>Contact | Arnico Marketing</title>
+<link rel="icon" href="Logos/Arnico Marketing fav Icon Light gray.png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-[#0A0A0A] text-white antialiased">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-8">
+    <a href="index.html"><img src="Logos/Arnico Marketing Horizontal White logo.png" alt="Arnico Marketing" class="h-14 w-auto"/></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="relative" data-dd="svc-dd"><button class="nav-link flex items-center gap-1">Services<svg class="w-3.5 h-3.5 opacity-50 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+      <div id="svc-dd" class="dropdown-menu"><a href="services.html#strategy" class="dropdown-item">Digital Strategy</a><a href="services.html#branding" class="dropdown-item">Branding & Design</a><a href="services.html#web" class="dropdown-item">Web Development</a><a href="services.html#content" class="dropdown-item">Content & Social</a><a href="services.html#ads" class="dropdown-item">Ad Campaigns</a><a href="services.html#seo" class="dropdown-item">SEO</a></div></div>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="case-studies.html" class="nav-link">Case Studies</a>
+      <a href="insights.html" class="nav-link">Insights</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden md:inline-flex btn-primary text-sm py-3 px-6">Get Free Audit</a>
+      <button id="menu-toggle" class="lg:hidden text-white p-2"><svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu lg:hidden border-t border-white/5">
+    <div class="px-6 py-4 flex flex-col gap-1">
+      <a href="index.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Home</a>
+      <a href="services.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Services</a>
+      <a href="about.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">About</a>
+      <a href="case-studies.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Case Studies</a>
+      <a href="insights.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Insights</a>
+      <a href="contact.html" class="py-3 text-white text-sm border-b border-white/5 block">Contact</a>
+      <a href="contact.html" class="mt-4 btn-primary text-sm py-3 text-center justify-center">Get Free Audit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- S1: HERO -->
+<section class="hero-bg pt-40 pb-20 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <span class="tag fade-up">Let's Talk Growth</span>
+    <h1 class="heading-xl fade-up delay-1 mt-6 mb-5">Start Your<br/><span class="gradient-text">Growth Journey Today</span></h1>
+    <p class="text-white/50 text-lg fade-up delay-2 max-w-2xl mx-auto">Get a complimentary marketing audit worth $1,500 and discover your biggest untapped growth opportunities.</p>
+  </div>
+</section>
+
+<!-- S2: CONTACT INFO STRIP -->
+<section class="py-12 px-6 border-y border-white/5">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 text-center">
+    <div class="fade-up">
+      <div class="icon-box mx-auto mb-4 text-xl">📧</div>
+      <div class="font-semibold mb-1">Email Us</div>
+      <a href="mailto:arnicomarketing@gmail.com" class="text-white/50 hover:text-white text-sm transition-colors">arnicomarketing@gmail.com</a>
+    </div>
+    <div class="fade-up delay-1">
+      <div class="icon-box mx-auto mb-4 text-xl">📞</div>
+      <div class="font-semibold mb-1">Call Us</div>
+      <a href="tel:+9779705088740" class="text-white/50 hover:text-white text-sm transition-colors">970-5088740</a>
+    </div>
+    <div class="fade-up delay-2">
+      <div class="icon-box mx-auto mb-4 text-xl">⏰</div>
+      <div class="font-semibold mb-1">Response Time</div>
+      <span class="text-white/50 text-sm">Within 24 hours, always</span>
+    </div>
+  </div>
+</section>
+
+<!-- S3: MAIN CONTACT FORM -->
+<section class="py-20 px-6" id="contact-section">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+
+    <!-- Left: Form -->
+    <div class="fade-up">
+      <p class="section-label mb-4">Send a Message</p>
+      <h2 class="heading-lg mb-8">Tell Us About<br/><span class="gradient-text">Your Business</span></h2>
+
+      <!-- Form -->
+      <form id="contact-form" novalidate class="space-y-5">
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label for="name" class="block text-sm font-medium text-white/60 mb-2">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" class="form-input" autocomplete="name"/>
+            <div id="name-err" class="field-err hidden"></div>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-white/60 mb-2">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" class="form-input" autocomplete="email"/>
+            <div id="email-err" class="field-err hidden"></div>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div>
+            <label for="phone" class="block text-sm font-medium text-white/60 mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="970-5088740" class="form-input" autocomplete="tel"/>
+          </div>
+          <div>
+            <label for="service" class="block text-sm font-medium text-white/60 mb-2">Service Interested In</label>
+            <select id="service" name="service" class="form-input" style="background:#0A0A0A">
+              <option value="" disabled selected>Select a service</option>
+              <option value="Digital Strategy">Digital Strategy</option>
+              <option value="Branding & Design">Branding & Design</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Content & Social">Content & Social</option>
+              <option value="Ad Campaigns">Ad Campaigns</option>
+              <option value="SEO">SEO</option>
+              <option value="Video Production">Video Production</option>
+              <option value="Full Growth Package">Full Growth Package</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="company" class="block text-sm font-medium text-white/60 mb-2">Company Name</label>
+          <input type="text" id="company" name="company" placeholder="Your Company" class="form-input"/>
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium text-white/60 mb-2">Tell Us About Your Goals *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Describe your business, current marketing challenges, and what you're hoping to achieve..." class="form-input resize-none"></textarea>
+          <div id="msg-err" class="field-err hidden"></div>
+        </div>
+        <div>
+          <label for="budget" class="block text-sm font-medium text-white/60 mb-2">Monthly Marketing Budget</label>
+          <select id="budget" name="budget" class="form-input" style="background:#0A0A0A">
+            <option value="" disabled selected>Select budget range</option>
+            <option value="Under $2,000">Under $2,000/mo</option>
+            <option value="$2,000 - $5,000">$2,000 – $5,000/mo</option>
+            <option value="$5,000 - $10,000">$5,000 – $10,000/mo</option>
+            <option value="$10,000 - $25,000">$10,000 – $25,000/mo</option>
+            <option value="$25,000+">$25,000+/mo</option>
+          </select>
+        </div>
+
+        <!-- Messages -->
+        <div id="form-success" class="form-success hidden">
+          ✓ Your message has been sent! We'll be in touch within 24 hours.
+        </div>
+        <div id="form-error" class="form-error-box hidden">
+          ✗ Something went wrong. Please email us directly at arnicomarketing@gmail.com
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-primary w-full justify-center py-4 text-base">
+          <span id="btn-text">Send Message & Get Free Audit</span>
+          <span id="btn-spin" class="spinner hidden"></span>
+        </button>
+        <p class="text-white/25 text-xs text-center">Your information is secure and will never be shared.</p>
+      </form>
+    </div>
+
+    <!-- Right: Info panels -->
+    <div class="space-y-8 fade-in">
+      <!-- What you get -->
+      <div class="glass-card p-8">
+        <h3 class="font-bold text-lg mb-6">What's Included in Your Free Audit</h3>
+        <ul class="space-y-4">
+          <li class="flex gap-3 items-start"><span class="text-green-400 flex-shrink-0 mt-0.5">✓</span><div><div class="font-semibold text-sm">Website & SEO Analysis</div><div class="text-white/40 text-xs">Full technical review of your current website performance</div></div></li>
+          <li class="flex gap-3 items-start"><span class="text-green-400 flex-shrink-0 mt-0.5">✓</span><div><div class="font-semibold text-sm">Competitor Intelligence Report</div><div class="text-white/40 text-xs">See what your top competitors are doing</div></div></li>
+          <li class="flex gap-3 items-start"><span class="text-green-400 flex-shrink-0 mt-0.5">✓</span><div><div class="font-semibold text-sm">Growth Opportunity Analysis</div><div class="text-white/40 text-xs">Identify your biggest untapped growth channels</div></div></li>
+          <li class="flex gap-3 items-start"><span class="text-green-400 flex-shrink-0 mt-0.5">✓</span><div><div class="font-semibold text-sm">Paid Media Review</div><div class="text-white/40 text-xs">Check where you're leaving ad spend on the table</div></div></li>
+          <li class="flex gap-3 items-start"><span class="text-green-400 flex-shrink-0 mt-0.5">✓</span><div><div class="font-semibold text-sm">Custom Growth Roadmap</div><div class="text-white/40 text-xs">A personalised strategy doc delivered within 5 business days</div></div></li>
+        </ul>
+        <div class="mt-6 pt-5 border-t border-white/5 flex items-center justify-between">
+          <span class="text-white/40 text-sm">Total Value</span>
+          <div><span class="line-through text-white/25 text-sm mr-2">$1,500</span><span class="font-bold text-green-400">FREE</span></div>
+        </div>
+      </div>
+
+      <!-- Direct Contact -->
+      <div class="glass-card p-8">
+        <h3 class="font-bold text-lg mb-5">Prefer to Talk Directly?</h3>
+        <div class="space-y-4">
+          <a href="mailto:arnicomarketing@gmail.com" class="flex items-center gap-4 p-4 rounded-xl border border-white/5 hover:border-white/15 hover:bg-white/[0.02] transition-all">
+            <div class="icon-box">📧</div>
+            <div><div class="font-semibold text-sm">arnicomarketing@gmail.com</div><div class="text-white/40 text-xs">General enquiries & partnerships</div></div>
+          </a>
+          <div class="flex items-center gap-4 p-4 rounded-xl border border-white/5">
+            <div class="icon-box">📞</div>
+            <div><div class="font-semibold text-sm">970-5088740</div><div class="text-white/40 text-xs">Sun–Fri 9am – 6pm NST</div></div>
+          </div>
+          <div class="flex items-center gap-4 p-4 rounded-xl border border-white/5">
+            <div class="icon-box">📍</div>
+            <div><div class="font-semibold text-sm">Shambhu Marga, Kathmandu 44600</div><div class="text-white/40 text-xs">Serving clients globally</div></div>
+          </div>
+        </div>
+        <!-- Social Links -->
+        <div class="mt-5 pt-5 border-t border-white/5">
+          <div class="text-white/40 text-xs mb-3">Follow us</div>
+          <div class="flex gap-3">
+            <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full border border-white/10 hover:border-white/30 flex items-center justify-center text-sm transition-colors hover:bg-white/[0.04]">in</a>
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full border border-white/10 hover:border-white/30 flex items-center justify-center text-sm transition-colors hover:bg-white/[0.04]">ig</a>
+            <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full border border-white/10 hover:border-white/30 flex items-center justify-center text-sm transition-colors hover:bg-white/[0.04]">fb</a>
+            <a href="#" aria-label="Twitter" class="w-9 h-9 rounded-full border border-white/10 hover:border-white/30 flex items-center justify-center text-sm transition-colors hover:bg-white/[0.04]">𝕏</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S4: MAP SECTION -->
+<section class="py-16 px-6 bg-[#0D0D0D]">
+  <div class="max-w-7xl mx-auto">
+    <p class="section-label fade-up mb-5">Our Location</p>
+    <div class="map-container fade-in" style="height:400px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56516.31625107483!2d85.29111415820311!3d27.708954160000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198a307baabf%3A0xb5137c1bf18db1ea!2sKathmandu%2044600!5e0!3m2!1sen!2snp!4v1712390400000!5m2!1sen!2snp"
+        width="100%" height="100%" style="border:0;filter:invert(90%) hue-rotate(180deg) saturate(0.3);" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Arnico Marketing Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- S5: FAQ -->
+<section class="py-20 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="section-label fade-up mb-4">FAQ</p>
+      <h2 class="heading-lg fade-up delay-1">Common <span class="gradient-text">Questions</span></h2>
+    </div>
+    <div class="space-y-3 fade-in">
+      <details class="rounded-2xl border border-white/5 hover:border-white/10 transition-colors overflow-hidden group">
+        <summary class="p-6 cursor-pointer font-semibold flex justify-between items-center list-none">How long does the free audit take?<span class="text-white/30 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <div class="px-6 pb-6 text-white/50 text-sm leading-relaxed">We deliver your free marketing audit within 5 business days of receiving your submission. It includes SEO analysis, competitor research, paid media review, and a custom growth roadmap.</div>
+      </details>
+      <details class="rounded-2xl border border-white/5 hover:border-white/10 transition-colors overflow-hidden group">
+        <summary class="p-6 cursor-pointer font-semibold flex justify-between items-center list-none">Do you work with businesses outside Nepal?<span class="text-white/30 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <div class="px-6 pb-6 text-white/50 text-sm leading-relaxed">Absolutely. Arnico Marketing works with clients globally. We have clients across Nepal, India, Australia, the UK, and Southeast Asia. Geographic location is no barrier.</div>
+      </details>
+      <details class="rounded-2xl border border-white/5 hover:border-white/10 transition-colors overflow-hidden group">
+        <summary class="p-6 cursor-pointer font-semibold flex justify-between items-center list-none">What's your minimum engagement?<span class="text-white/30 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <div class="px-6 pb-6 text-white/50 text-sm leading-relaxed">We typically work on a 3-month minimum engagement to ensure we can deliver meaningful results. After that, engagements are month-to-month with no lock-in contracts.</div>
+      </details>
+      <details class="rounded-2xl border border-white/5 hover:border-white/10 transition-colors overflow-hidden group">
+        <summary class="p-6 cursor-pointer font-semibold flex justify-between items-center list-none">How soon will I see results?<span class="text-white/30 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <div class="px-6 pb-6 text-white/50 text-sm leading-relaxed">Paid advertising results can be seen within the first 2-4 weeks. SEO and organic strategies typically show meaningful traction at 3-4 months, with compounding results beyond that. We're transparent about timelines from day one.</div>
+      </details>
+      <details class="rounded-2xl border border-white/5 hover:border-white/10 transition-colors overflow-hidden group">
+        <summary class="p-6 cursor-pointer font-semibold flex justify-between items-center list-none">Do you offer one-off projects?<span class="text-white/30 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <div class="px-6 pb-6 text-white/50 text-sm leading-relaxed">Yes. We offer project-based engagements for website development, brand identity, and one-off campaign builds. Contact us to discuss your specific needs.</div>
+      </details>
+      <details class="rounded-2xl border border-white/5 hover:border-white/10 transition-colors overflow-hidden group">
+        <summary class="p-6 cursor-pointer font-semibold flex justify-between items-center list-none">How do you report on results?<span class="text-white/30 group-open:rotate-45 transition-transform text-xl">+</span></summary>
+        <div class="px-6 pb-6 text-white/50 text-sm leading-relaxed">You get access to a real-time dashboard, weekly performance snapshots, and a comprehensive monthly strategy review. We report on revenue, leads, and pipeline — not vanity metrics.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- S6-S7: PROCESS + WHY US -->
+<section class="py-20 px-6 bg-[#0D0D0D]">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="section-label fade-up mb-4">What Happens Next</p>
+      <h2 class="heading-lg fade-up delay-1">Your Path to <span class="gradient-text">Growth Starts Here</span></h2>
+    </div>
+    <div class="grid md:grid-cols-4 gap-6 text-center">
+      <div class="fade-up">
+        <div class="w-12 h-12 rounded-2xl bg-white text-black flex items-center justify-center font-black text-lg font-['Outfit'] mx-auto mb-4">1</div>
+        <h3 class="font-bold mb-2">Submit Form</h3>
+        <p class="text-white/40 text-sm">Fill out the contact form with your business details and goals.</p>
+      </div>
+      <div class="fade-up delay-1">
+        <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center font-black text-lg font-['Outfit'] mx-auto mb-4">2</div>
+        <h3 class="font-bold mb-2">Discovery Call</h3>
+        <p class="text-white/40 text-sm">We schedule a 30-minute strategy call to learn about your business.</p>
+      </div>
+      <div class="fade-up delay-2">
+        <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center font-black text-lg font-['Outfit'] mx-auto mb-4">3</div>
+        <h3 class="font-bold mb-2">Free Audit</h3>
+        <p class="text-white/40 text-sm">We deliver your custom audit and growth roadmap within 5 days.</p>
+      </div>
+      <div class="fade-up delay-3">
+        <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center font-black text-lg font-['Outfit'] mx-auto mb-4">4</div>
+        <h3 class="font-bold mb-2">Start Growing</h3>
+        <p class="text-white/40 text-sm">Approve the strategy, onboard in 7 days, and start seeing results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S8: OFFICE DETAILS -->
+<section class="py-20 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="glass-card p-8 fade-up">
+      <div class="text-2xl mb-5">🌏</div>
+      <h3 class="font-bold text-lg mb-3">Kathmandu HQ</h3>
+      <p class="text-white/45 text-sm leading-relaxed">Shambhu Marga<br/>Kathmandu 44600<br/>Nepal</p>
+    </div>
+    <div class="glass-card p-8 fade-up delay-1">
+      <div class="text-2xl mb-5">⏰</div>
+      <h3 class="font-bold text-lg mb-3">Business Hours</h3>
+      <div class="space-y-2 text-sm text-white/45">
+        <div class="flex justify-between"><span>Sunday – Friday</span><span>9am – 6pm NST</span></div>
+        <div class="flex justify-between"><span>Saturday</span><span>By appointment</span></div>
+        <div class="flex justify-between"><span>Sunday</span><span>Closed</span></div>
+      </div>
+    </div>
+    <div class="glass-card p-8 fade-up delay-2">
+      <div class="text-2xl mb-5">🌐</div>
+      <h3 class="font-bold text-lg mb-3">Global Clients</h3>
+      <p class="text-white/45 text-sm leading-relaxed">We work remotely with clients across Nepal, India, Australia, UK, and beyond. Distance is never a barrier to great results.</p>
+    </div>
+  </div>
+</section>
+
+<!-- S9: TESTIMONIALS -->
+<section class="py-20 px-6 bg-[#0D0D0D]">
+  <div class="max-w-5xl mx-auto text-center">
+    <p class="section-label fade-up mb-4">What Clients Say</p>
+    <h2 class="heading-lg fade-up delay-1 mb-12">Don't Just Take <span class="gradient-text">Our Word For It</span></h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="glass-card p-8 text-left fade-up">
+        <div class="text-yellow-400 mb-4 text-sm">★★★★★</div>
+        <p class="text-white/65 text-sm leading-relaxed mb-6">"Getting in touch with Arnico was the best business decision I made this year. The audit they provided alone was worth thousands. The results since have been extraordinary."</p>
+        <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-sm">DR</div><div><div class="font-semibold text-sm">Daniel Ross</div><div class="text-white/40 text-xs">CEO, Vantage Group</div></div></div>
+      </div>
+      <div class="glass-card p-8 text-left fade-up delay-1">
+        <div class="text-yellow-400 mb-4 text-sm">★★★★★</div>
+        <p class="text-white/65 text-sm leading-relaxed mb-6">"From the very first call, I knew Arnico was different. They asked deep questions about my business goals — not just my marketing budget. That's the kind of partner you want."</p>
+        <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center font-bold text-sm">EL</div><div><div class="font-semibold text-sm">Emma Liu</div><div class="text-white/40 text-xs">Founder, Coastal Realty</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S10: SOCIAL PROOF STATS -->
+<section class="py-16 px-6 border-y border-white/5">
+  <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-0 text-center">
+    <div class="px-8 py-4 border-r border-white/5">
+      <div class="text-4xl font-black font-['Outfit'] mb-1" data-counter="150" data-suffix="+">0+</div>
+      <div class="text-white/40 text-xs uppercase tracking-widest">Happy Clients</div>
+    </div>
+    <div class="px-8 py-4 border-r border-white/5">
+      <div class="text-4xl font-black font-['Outfit'] mb-1" data-counter="5" data-suffix="-star">5-star</div>
+      <div class="text-white/40 text-xs uppercase tracking-widest">Average Rating</div>
+    </div>
+    <div class="px-8 py-4 border-r border-white/5">
+      <div class="text-4xl font-black font-['Outfit'] mb-1">24h</div>
+      <div class="text-white/40 text-xs uppercase tracking-widest">Response Time</div>
+    </div>
+    <div class="px-8 py-4">
+      <div class="text-4xl font-black font-['Outfit'] mb-1" data-counter="95" data-suffix="%">0%</div>
+      <div class="text-white/40 text-xs uppercase tracking-widest">Client Retention</div>
+    </div>
+  </div>
+</section>
+
+<!-- S11: ALTERNATIVE CONTACT OPTIONS -->
+<section class="py-20 px-6">
+  <div class="max-w-2xl mx-auto text-center">
+    <p class="section-label fade-up mb-4">Other Ways to Reach Us</p>
+    <h2 class="heading-md fade-up delay-1 mb-10">Connect With Us<br/><span class="gradient-text">Anywhere</span></h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-up delay-2">
+      <a href="#" class="glass-card p-6 text-center hover-scale">
+        <div class="text-xl mb-2">in</div>
+        <div class="text-xs text-white/50">LinkedIn</div>
+      </a>
+      <a href="#" class="glass-card p-6 text-center hover-scale">
+        <div class="text-xl mb-2">📸</div>
+        <div class="text-xs text-white/50">Instagram</div>
+      </a>
+      <a href="#" class="glass-card p-6 text-center hover-scale">
+        <div class="text-xl mb-2">📘</div>
+        <div class="text-xs text-white/50">Facebook</div>
+      </a>
+      <a href="#" class="glass-card p-6 text-center hover-scale">
+        <div class="text-xl mb-2">𝕏</div>
+        <div class="text-xs text-white/50">Twitter / X</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- S12: FINAL CTA -->
+<section class="py-24 px-6 bg-[#070707]">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="section-label fade-up mb-5">No Commitment Required</p>
+    <h2 class="heading-lg fade-up delay-1 mb-5">Get Your Free<br/><span class="gradient-text">Marketing Audit Now</span></h2>
+    <p class="text-white/50 mb-10 fade-up delay-2">Zero cost. Zero obligation. Just expert insights into exactly how to grow your business faster.</p>
+    <div class="fade-up delay-3">
+      <a href="#contact-section" class="btn-primary inline-flex">Book My Free Audit
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#070707] border-t border-white/5 pt-16 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-12 mb-14">
+      <div><img src="Logos/Arnico Marketing Horizontal White logo.png" alt="Arnico Marketing" class="h-12 w-auto mb-5 opacity-90"/><p class="text-white/40 text-sm leading-relaxed mb-4">Performance-driven marketing for ambitious businesses.</p><a href="mailto:arnicomarketing@gmail.com" class="text-white/50 hover:text-white text-sm">arnicomarketing@gmail.com</a></div>
+      <div><h4 class="font-semibold text-sm mb-5 text-white/80">Services</h4><ul class="space-y-3"><li><a href="services.html#strategy">Digital Strategy</a></li><li><a href="services.html#branding">Branding</a></li><li><a href="services.html#web">Web Development</a></li><li><a href="services.html#ads">Ad Campaigns</a></li><li><a href="services.html#seo">SEO</a></li></ul></div>
+      <div><h4 class="font-semibold text-sm mb-5 text-white/80">Company</h4><ul class="space-y-3"><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4 class="font-semibold text-sm mb-5 text-white/80">Connect</h4><ul class="space-y-3"><li><a href="#">LinkedIn</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li><li><a href="#">Twitter / X</a></li></ul></div>
+    </div>
+    <div class="divider mb-6"></div>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/25">
+      <span>© 2025 Arnico Marketing. All rights reserved.</span>
+      <div class="flex gap-6"><a href="#" class="hover:text-white/50">Privacy Policy</a><a href="#" class="hover:text-white/50">Terms</a></div>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" class="fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full bg-white text-black flex items-center justify-center shadow-lg hover:scale-110 transition-all" aria-label="Back to top"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg></button>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

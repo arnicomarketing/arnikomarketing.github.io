@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Arnico Marketing – A performance-driven marketing partner focused on measurable business growth through data, strategy, and integrated marketing systems."/>
+<meta property="og:title" content="Arnico Marketing | Performance-Driven Growth"/>
+<meta property="og:description" content="We turn marketing investment into measurable revenue. Digital strategy, branding, web, SEO, ads, and content – all under one roof."/>
+<title>Arnico Marketing | Performance-Driven Growth</title>
+<link rel="icon" href="Logos/Arnico Marketing fav Icon Light gray.png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css"/>
+<script>tailwind.config={theme:{extend:{colors:{dark:'#0A0A0A'}}}}</script>
+</head>
+<body class="bg-[#0A0A0A] text-white antialiased">
+
+<!-- ======================================================
+     NAVBAR
+====================================================== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-8">
+    <!-- Logo -->
+    <a href="index.html" class="flex-shrink-0">
+      <img src="Logos/Arnico Marketing Horizontal White logo.png" alt="Arnico Marketing" class="h-14 w-auto"/>
+    </a>
+    <!-- Desktop Nav -->
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link active">Home</a>
+      <!-- Services Dropdown -->
+      <div class="relative" data-dd="svc-dd">
+        <button class="nav-link flex items-center gap-1">Services
+          <svg class="w-3.5 h-3.5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="svc-dd" class="dropdown-menu">
+          <a href="services.html#strategy"   class="dropdown-item">Digital Strategy</a>
+          <a href="services.html#branding"   class="dropdown-item">Branding & Design</a>
+          <a href="services.html#web"        class="dropdown-item">Web Development</a>
+          <a href="services.html#content"    class="dropdown-item">Content & Social</a>
+          <a href="services.html#ads"        class="dropdown-item">Ad Campaigns</a>
+          <a href="services.html#seo"        class="dropdown-item">SEO</a>
+          <a href="services.html#video"      class="dropdown-item">Video Production</a>
+        </div>
+      </div>
+      <a href="about.html"        class="nav-link">About</a>
+      <a href="case-studies.html" class="nav-link">Case Studies</a>
+      <a href="insights.html"     class="nav-link">Insights</a>
+      <a href="contact.html"      class="nav-link">Contact</a>
+    </div>
+    <!-- CTA + Hamburger -->
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden md:inline-flex btn-primary text-sm py-3 px-6">Get Free Audit</a>
+      <button id="menu-toggle" class="lg:hidden text-white p-2" aria-label="Menu">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden border-t border-white/5">
+    <div class="px-6 py-4 flex flex-col gap-1">
+      <a href="index.html"        class="py-3 text-white/80 hover:text-white text-sm border-b border-white/5 block">Home</a>
+      <div>
+        <button id="mob-svc-btn" class="w-full flex justify-between items-center py-3 text-white/80 hover:text-white text-sm border-b border-white/5">
+          Services
+          <svg id="mob-svc-arr" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div id="mob-svc-sub" class="mobile-sub pl-4">
+          <a href="services.html#strategy" class="py-2 text-white/60 hover:text-white text-sm block">Digital Strategy</a>
+          <a href="services.html#branding" class="py-2 text-white/60 hover:text-white text-sm block">Branding & Design</a>
+          <a href="services.html#web"      class="py-2 text-white/60 hover:text-white text-sm block">Web Development</a>
+          <a href="services.html#content"  class="py-2 text-white/60 hover:text-white text-sm block">Content & Social</a>
+          <a href="services.html#ads"      class="py-2 text-white/60 hover:text-white text-sm block">Ad Campaigns</a>
+          <a href="services.html#seo"      class="py-2 text-white/60 hover:text-white text-sm block">SEO</a>
+        </div>
+      </div>
+      <a href="about.html"        class="py-3 text-white/80 hover:text-white text-sm border-b border-white/5 block">About</a>
+      <a href="case-studies.html" class="py-3 text-white/80 hover:text-white text-sm border-b border-white/5 block">Case Studies</a>
+      <a href="insights.html"     class="py-3 text-white/80 hover:text-white text-sm border-b border-white/5 block">Insights</a>
+      <a href="contact.html"      class="py-3 text-white/80 hover:text-white text-sm border-b border-white/5 block">Contact</a>
+      <a href="contact.html"      class="mt-4 btn-primary text-sm py-3 text-center justify-center">Get Free Audit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================================================
+     SECTION 1 — HERO
+====================================================== -->
+<section class="hero-bg relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden" aria-label="Hero">
+  <!-- Grid overlay -->
+  <div class="absolute inset-0 pointer-events-none" style="background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:60px 60px;"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-4xl">
+      <div class="fade-up mb-6">
+        <span class="tag">Performance Marketing Agency</span>
+      </div>
+      <h1 class="heading-xl fade-up delay-1 mb-6">
+        Marketing That Drives<br/>
+        <span class="gradient-text">Measurable Growth.</span>
+      </h1>
+      <p class="fade-up delay-2 text-lg text-white/55 mb-10 max-w-2xl leading-relaxed">
+        We combine data, strategy, and creative execution to build marketing systems that deliver real business outcomes — revenue, leads, and compounding growth.
+      </p>
+      <div class="fade-up delay-3 flex flex-wrap gap-4">
+        <a href="contact.html" class="btn-primary">Start Your Growth Journey
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="case-studies.html" class="btn-ghost">View Case Studies</a>
+      </div>
+      <!-- Hero Stats -->
+      <div class="fade-up delay-4 mt-16 grid grid-cols-3 gap-0 max-w-lg">
+        <div class="pr-8 border-r border-white/10">
+          <div class="number-big text-4xl font-black" data-counter="150" data-suffix="+">0+</div>
+          <div class="text-white/40 text-xs mt-1 uppercase tracking-widest">Clients Served</div>
+        </div>
+        <div class="px-8 border-r border-white/10">
+          <div class="number-big text-4xl font-black" data-counter="300" data-suffix="%" data-prefix="">0%</div>
+          <div class="text-white/40 text-xs mt-1 uppercase tracking-widest">Avg. ROI</div>
+        </div>
+        <div class="pl-8">
+          <div class="number-big text-4xl font-black" data-counter="8" data-suffix="+ Yrs">0</div>
+          <div class="text-white/40 text-xs mt-1 uppercase tracking-widest">Experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Orb decoration -->
+  <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-white/[0.015] blur-3xl pointer-events-none"></div>
+</section>
+
+<!-- ======================================================
+     SECTION 2 — TRUSTED BY (Marquee)
+====================================================== -->
+<section class="py-16 border-y border-white/5" aria-label="Trusted by leading brands">
+  <div class="max-w-7xl mx-auto px-6 mb-8 text-center">
+    <p class="section-label">Trusted by ambitious brands</p>
+  </div>
+  <div class="marquee-wrapper">
+    <div id="marquee-track" class="marquee-track">
+      <div class="flex items-center gap-16 px-8">
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">TechNova</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">Vantage Group</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">Apex Retail</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">BlueStar Finance</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">Orbit Logistics</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">PeakFit Health</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">NexGen Software</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">Coastal Realty</span>
+        <span class="text-white/20 font-semibold text-lg tracking-wide whitespace-nowrap">Lumera Beauty</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 3 — SERVICES OVERVIEW
+====================================================== -->
+<section id="services" class="py-28 px-6" aria-label="Services">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="section-label fade-up mb-4">What We Do</p>
+      <h2 class="heading-lg fade-up delay-1">Integrated Marketing<br/><span class="gradient-text">Built for Growth</span></h2>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <a href="services.html#strategy" class="service-card fade-up block no-underline group">
+        <div class="icon-box mb-6 text-2xl group-hover:scale-110 transition-transform">📡</div>
+        <h3 class="text-xl font-bold mb-3">Digital Strategy</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Data-led growth roadmaps that align your marketing with measurable business goals and real revenue targets.</p>
+        <div class="mt-5 flex items-center gap-2 text-sm text-white/40 group-hover:text-white/70 transition-colors">
+          Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </div>
+      </a>
+      <!-- Card 2 -->
+      <a href="services.html#branding" class="service-card fade-up delay-1 block no-underline group">
+        <div class="icon-box mb-6 text-2xl group-hover:scale-110 transition-transform">✦</div>
+        <h3 class="text-xl font-bold mb-3">Branding & Design</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Premium visual identity systems that differentiate you in the market and build lasting brand equity.</p>
+        <div class="mt-5 flex items-center gap-2 text-sm text-white/40 group-hover:text-white/70 transition-colors">
+          Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </div>
+      </a>
+      <!-- Card 3 -->
+      <a href="services.html#web" class="service-card fade-up delay-2 block no-underline group">
+        <div class="icon-box mb-6 text-2xl group-hover:scale-110 transition-transform">🌐</div>
+        <h3 class="text-xl font-bold mb-3">Web Development</h3>
+        <p class="text-white/50 text-sm leading-relaxed">High-converting websites and landing pages engineered for performance, UX, and lead generation.</p>
+        <div class="mt-5 flex items-center gap-2 text-sm text-white/40 group-hover:text-white/70 transition-colors">
+          Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </div>
+      </a>
+      <!-- Card 4 -->
+      <a href="services.html#content" class="service-card fade-up delay-3 block no-underline group">
+        <div class="icon-box mb-6 text-2xl group-hover:scale-110 transition-transform">✍️</div>
+        <h3 class="text-xl font-bold mb-3">Content & Social</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Strategic content creation and social media management that builds audiences and drives engagement.</p>
+        <div class="mt-5 flex items-center gap-2 text-sm text-white/40 group-hover:text-white/70 transition-colors">
+          Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </div>
+      </a>
+      <!-- Card 5 -->
+      <a href="services.html#ads" class="service-card fade-up delay-4 block no-underline group">
+        <div class="icon-box mb-6 text-2xl group-hover:scale-110 transition-transform">📈</div>
+        <h3 class="text-xl font-bold mb-3">Ad Campaigns</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Performance advertising across Google, Meta, LinkedIn and more — optimised for maximum ROI and customer acquisition.</p>
+        <div class="mt-5 flex items-center gap-2 text-sm text-white/40 group-hover:text-white/70 transition-colors">
+          Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </div>
+      </a>
+      <!-- Card 6 -->
+      <a href="services.html#seo" class="service-card fade-up delay-5 block no-underline group">
+        <div class="icon-box mb-6 text-2xl group-hover:scale-110 transition-transform">🔍</div>
+        <h3 class="text-xl font-bold mb-3">SEO & Visibility</h3>
+        <p class="text-white/50 text-sm leading-relaxed">Technical and content SEO strategies that compound over time — turning search into a sustainable growth channel.</p>
+        <div class="mt-5 flex items-center gap-2 text-sm text-white/40 group-hover:text-white/70 transition-colors">
+          Learn more <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </div>
+      </a>
+    </div>
+    <div class="text-center mt-12 fade-up">
+      <a href="services.html" class="btn-ghost">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 4 — ABOUT PREVIEW
+====================================================== -->
+<section class="py-24 px-6 border-t border-white/5" aria-label="About Arnico Marketing">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="section-label fade-up mb-5">Who We Are</p>
+      <h2 class="heading-lg fade-up delay-1 mb-6">Your Growth Partner,<br/><span class="gradient-text">Not Just an Agency.</span></h2>
+      <p class="text-white/55 leading-relaxed mb-6 fade-up delay-2">Arnico Marketing is a performance-driven marketing partner that embeds data and strategy at the core of everything we do. We don't sell deliverables — we deliver outcomes.</p>
+      <p class="text-white/55 leading-relaxed mb-8 fade-up delay-3">We operate as an extension of your team, aligning every campaign and creative decision with your revenue goals. Our integrated approach means strategy, execution, and analytics work in sync — not in silos.</p>
+      <div class="fade-up delay-4">
+        <a href="about.html" class="btn-ghost">Our Story &amp; Philosophy</a>
+      </div>
+    </div>
+    <!-- Philosophy Pillars -->
+    <div class="grid grid-cols-2 gap-4">
+      <div class="glass-card p-8 fade-up">
+        <div class="text-2xl mb-4">📊</div>
+        <h3 class="font-bold mb-2">Data First</h3>
+        <p class="text-white/45 text-sm">Every decision backed by insights, analytics, and evidence.</p>
+      </div>
+      <div class="glass-card p-8 fade-up delay-1">
+        <div class="text-2xl mb-4">🧭</div>
+        <h3 class="font-bold mb-2">Strategy Before Execution</h3>
+        <p class="text-white/45 text-sm">Plan with precision, then execute with purpose.</p>
+      </div>
+      <div class="glass-card p-8 fade-up delay-2">
+        <div class="text-2xl mb-4">🎯</div>
+        <h3 class="font-bold mb-2">Outcome Focused</h3>
+        <p class="text-white/45 text-sm">We measure success in revenue and real business growth.</p>
+      </div>
+      <div class="glass-card p-8 fade-up delay-3">
+        <div class="text-2xl mb-4">🤝</div>
+        <h3 class="font-bold mb-2">True Partnership</h3>
+        <p class="text-white/45 text-sm">We work as an embedded extension of your team.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 5 — DIGITAL STRATEGY
+====================================================== -->
+<section class="py-24 px-6 bg-[#0D0D0D]" aria-label="Digital Strategy">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <p class="section-label fade-up mb-4">Our Approach</p>
+      <h2 class="heading-lg fade-up delay-1 mb-5">Strategy That Creates<br/><span class="gradient-text">Compounding Results</span></h2>
+      <p class="text-white/50 fade-up delay-2">The Arnico method integrates market intelligence, audience insight, and channel strategy into a unified growth operating system — not a patchwork of tactics.</p>
+    </div>
+    <div class="grid md:grid-cols-4 gap-0 border border-white/5 rounded-2xl overflow-hidden fade-in">
+      <div class="p-8 border-r border-white/5 hover:bg-white/[0.025] transition-colors">
+        <div class="text-4xl font-black text-white/10 font-['Outfit'] mb-4">01</div>
+        <h3 class="font-bold text-lg mb-3">Discovery</h3>
+        <p class="text-white/45 text-sm">Audit, research, and competitive analysis to uncover your greatest growth levers.</p>
+      </div>
+      <div class="p-8 border-r border-white/5 hover:bg-white/[0.025] transition-colors">
+        <div class="text-4xl font-black text-white/10 font-['Outfit'] mb-4">02</div>
+        <h3 class="font-bold text-lg mb-3">Strategy</h3>
+        <p class="text-white/45 text-sm">Build a prioritised growth roadmap tailored to your goals and market position.</p>
+      </div>
+      <div class="p-8 border-r border-white/5 hover:bg-white/[0.025] transition-colors">
+        <div class="text-4xl font-black text-white/10 font-['Outfit'] mb-4">03</div>
+        <h3 class="font-bold text-lg mb-3">Execution</h3>
+        <p class="text-white/45 text-sm">Precision campaigns across channels, coordinated by a dedicated team.</p>
+      </div>
+      <div class="p-8 hover:bg-white/[0.025] transition-colors">
+        <div class="text-4xl font-black text-white/10 font-['Outfit'] mb-4">04</div>
+        <h3 class="font-bold text-lg mb-3">Optimise</h3>
+        <p class="text-white/45 text-sm">Continuous testing, measurement, and refinement to accelerate results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 6 — BRANDING & DESIGN
+====================================================== -->
+<section class="py-24 px-6" aria-label="Branding and Design">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <!-- Visual mock -->
+    <div class="fade-in order-2 lg:order-1">
+      <div class="rounded-2xl bg-[#111] border border-white/5 p-8 space-y-4">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-3 h-3 rounded-full bg-white/10"></div>
+          <div class="w-3 h-3 rounded-full bg-white/10"></div>
+          <div class="w-3 h-3 rounded-full bg-white/10"></div>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 flex items-center justify-center text-2xl">✦</div>
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-white/8 to-transparent border border-white/8 flex items-center justify-center text-white font-black text-xl font-['Outfit']">A</div>
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 flex items-center justify-center">
+            <div class="w-8 h-1 bg-white/30 rounded"></div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="h-2 bg-white/05 rounded-full w-full"></div>
+          <div class="h-2 bg-white/05 rounded-full w-4/5"></div>
+          <div class="h-2 bg-white/05 rounded-full w-3/5"></div>
+        </div>
+        <div class="flex gap-3 pt-2">
+          <div class="h-8 rounded-full bg-white/90 flex-1"></div>
+          <div class="h-8 rounded-full border border-white/20 flex-1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <p class="section-label fade-up mb-5">Branding & Design</p>
+      <h2 class="heading-lg fade-up delay-1 mb-6">Identity That Commands <span class="gradient-text">Premium Attention</span></h2>
+      <p class="text-white/55 leading-relaxed mb-8 fade-up delay-2">We craft visual identities that elevate positioning, build trust, and make your brand impossible to ignore. From logo systems to full brand guidelines, we create consistency that scales.</p>
+      <ul class="space-y-4 fade-up delay-3">
+        <li class="flex items-start gap-3"><span class="text-white/40 mt-1">→</span><span class="text-white/75 text-sm">Logo design & brand identity systems</span></li>
+        <li class="flex items-start gap-3"><span class="text-white/40 mt-1">→</span><span class="text-white/75 text-sm">Brand guidelines & style guides</span></li>
+        <li class="flex items-start gap-3"><span class="text-white/40 mt-1">→</span><span class="text-white/75 text-sm">Marketing collateral & presentation design</span></li>
+        <li class="flex items-start gap-3"><span class="text-white/40 mt-1">→</span><span class="text-white/75 text-sm">UI/UX design for digital products</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 7 — WEB DEVELOPMENT
+====================================================== -->
+<section class="py-24 px-6 bg-[#0D0D0D]" aria-label="Web Development">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <p class="section-label fade-up mb-5">Web Development</p>
+      <h2 class="heading-lg fade-up delay-1 mb-6">Websites Engineered to <span class="gradient-text">Convert & Scale</span></h2>
+      <p class="text-white/55 leading-relaxed mb-8 fade-up delay-2">Your website is your 24/7 salesperson. We build fast, beautiful, and conversion-optimised websites that capture leads and communicate your value with clarity.</p>
+      <div class="grid grid-cols-2 gap-4 fade-up delay-3">
+        <div class="bg-white/[0.03] border border-white/5 rounded-xl p-5">
+          <div class="text-xl mb-2">⚡</div>
+          <div class="font-semibold text-sm mb-1">Lightning Fast</div>
+          <div class="text-white/40 text-xs">Core Web Vitals optimised</div>
+        </div>
+        <div class="bg-white/[0.03] border border-white/5 rounded-xl p-5">
+          <div class="text-xl mb-2">📱</div>
+          <div class="font-semibold text-sm mb-1">Mobile First</div>
+          <div class="text-white/40 text-xs">Pixel-perfect across all devices</div>
+        </div>
+        <div class="bg-white/[0.03] border border-white/5 rounded-xl p-5">
+          <div class="text-xl mb-2">🔒</div>
+          <div class="font-semibold text-sm mb-1">Secure & Reliable</div>
+          <div class="text-white/40 text-xs">SSL, uptime, and performance</div>
+        </div>
+        <div class="bg-white/[0.03] border border-white/5 rounded-xl p-5">
+          <div class="text-xl mb-2">🎯</div>
+          <div class="font-semibold text-sm mb-1">CRO Ready</div>
+          <div class="text-white/40 text-xs">Built to maximise conversions</div>
+        </div>
+      </div>
+    </div>
+    <!-- Mock browser -->
+    <div class="fade-in">
+      <div class="rounded-2xl border border-white/8 overflow-hidden bg-[#111]">
+        <div class="bg-[#0A0A0A] px-4 py-3 flex items-center gap-2 border-b border-white/5">
+          <div class="flex gap-1.5"><div class="w-3 h-3 rounded-full bg-white/10"></div><div class="w-3 h-3 rounded-full bg-white/10"></div><div class="w-3 h-3 rounded-full bg-white/10"></div></div>
+          <div class="flex-1 bg-white/5 rounded-md h-6 mx-4"></div>
+        </div>
+        <div class="p-6 space-y-4">
+          <div class="h-32 bg-gradient-to-br from-white/5 to-transparent rounded-xl border border-white/5"></div>
+          <div class="grid grid-cols-3 gap-3">
+            <div class="h-16 bg-white/[0.03] rounded-lg border border-white/5"></div>
+            <div class="h-16 bg-white/[0.03] rounded-lg border border-white/5"></div>
+            <div class="h-16 bg-white/[0.03] rounded-lg border border-white/5"></div>
+          </div>
+          <div class="space-y-2">
+            <div class="h-2 bg-white/05 rounded w-full"></div>
+            <div class="h-2 bg-white/05 rounded w-4/5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 8 — CONTENT & SOCIAL
+====================================================== -->
+<section class="py-24 px-6" aria-label="Content and Social Media">
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <p class="section-label fade-up mb-4">Content & Social</p>
+    <h2 class="heading-lg fade-up delay-1 mb-5">Stories That Build<br/><span class="gradient-text">Loyal Audiences</span></h2>
+    <p class="text-white/50 fade-up delay-2 max-w-2xl mx-auto">We create content that doesn't just fill space — it drives discovery, builds authority, and converts followers into customers.</p>
+  </div>
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+    <div class="glass-card p-8 fade-up text-center">
+      <div class="text-3xl mb-5">📝</div>
+      <h3 class="font-bold text-lg mb-3">Content Strategy</h3>
+      <p class="text-white/45 text-sm">Editorial calendars, topic research, and distribution plans built around your audience's needs.</p>
+    </div>
+    <div class="glass-card p-8 fade-up delay-1 text-center">
+      <div class="text-3xl mb-5">📲</div>
+      <h3 class="font-bold text-lg mb-3">Social Media Management</h3>
+      <p class="text-white/45 text-sm">Daily management, community building, and growth across Instagram, LinkedIn, Facebook, and TikTok.</p>
+    </div>
+    <div class="glass-card p-8 fade-up delay-2 text-center">
+      <div class="text-3xl mb-5">🎬</div>
+      <h3 class="font-bold text-lg mb-3">Video Production</h3>
+      <p class="text-white/45 text-sm">Engaging video content from concept to publish — reels, testimonials, explainers, and brand films.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 9 — ADVERTISING & SEO
+====================================================== -->
+<section class="py-24 px-6 bg-[#0D0D0D]" aria-label="Advertising and SEO">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div class="progress-section">
+      <p class="section-label fade-up mb-5">Performance & Visibility</p>
+      <h2 class="heading-lg fade-up delay-1 mb-8">Ads & SEO That Deliver <span class="gradient-text">Qualified Leads</span></h2>
+      <div class="space-y-6 fade-up delay-2">
+        <div>
+          <div class="flex justify-between text-sm mb-1"><span class="text-white/70">Google Ads ROAS</span><span class="text-white/40">4.8x avg</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-w="85"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1"><span class="text-white/70">Organic Traffic Growth</span><span class="text-white/40">+240%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-w="78"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1"><span class="text-white/70">Meta Ads CTR</span><span class="text-white/40">3.2% avg</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-w="70"></div></div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1"><span class="text-white/70">Keyword Ranking (Page 1)</span><span class="text-white/40">92%</span></div>
+          <div class="progress-bar"><div class="progress-fill" data-w="92"></div></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="space-y-4">
+        <div class="service-card fade-up">
+          <h3 class="font-bold mb-2">Paid Advertising</h3>
+          <p class="text-white/45 text-sm">Google Search & Display, Meta, LinkedIn, YouTube — optimised for conversion, not just clicks.</p>
+        </div>
+        <div class="service-card fade-up delay-1">
+          <h3 class="font-bold mb-2">SEO & Content Marketing</h3>
+          <p class="text-white/45 text-sm">Technical SEO audits, on-page optimisation, and content that ranks and converts at scale.</p>
+        </div>
+        <div class="service-card fade-up delay-2">
+          <h3 class="font-bold mb-2">Analytics & Reporting</h3>
+          <p class="text-white/45 text-sm">Real-time dashboards and monthly performance reviews so you always know exactly what's working.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 10 — CASE STUDY PREVIEW
+====================================================== -->
+<section class="py-24 px-6" aria-label="Case Studies">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-14 gap-4">
+      <div>
+        <p class="section-label fade-up mb-3">Results</p>
+        <h2 class="heading-lg fade-up delay-1">Real Brands,<br/><span class="gradient-text">Real Outcomes</span></h2>
+      </div>
+      <a href="case-studies.html" class="btn-ghost fade-up">All Case Studies</a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Case 1 -->
+      <div class="case-card fade-up">
+        <div class="h-48 bg-gradient-to-br from-white/5 to-transparent flex items-center justify-center border-b border-white/5">
+          <span class="text-5xl">🏋️</span>
+        </div>
+        <div class="p-6">
+          <span class="tag mb-4 inline-block">Health & Fitness</span>
+          <h3 class="font-bold text-lg mb-2">PeakFit – 312% Lead Increase</h3>
+          <p class="text-white/45 text-sm mb-5">Complete digital rebrand, new website, and Google Ads strategy that tripled monthly lead volume in 90 days.</p>
+          <div class="grid grid-cols-3 gap-3 border-t border-white/5 pt-4">
+            <div><div class="font-bold text-lg">312%</div><div class="text-white/40 text-xs">Leads</div></div>
+            <div><div class="font-bold text-lg">4.2x</div><div class="text-white/40 text-xs">ROAS</div></div>
+            <div><div class="font-bold text-lg">90</div><div class="text-white/40 text-xs">Days</div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Case 2 -->
+      <div class="case-card fade-up delay-1">
+        <div class="h-48 bg-gradient-to-br from-white/5 to-transparent flex items-center justify-center border-b border-white/5">
+          <span class="text-5xl">🏗️</span>
+        </div>
+        <div class="p-6">
+          <span class="tag mb-4 inline-block">Construction</span>
+          <h3 class="font-bold text-lg mb-2">BuildCo – $2.4M Pipeline Built</h3>
+          <p class="text-white/45 text-sm mb-5">SEO + LinkedIn strategy that established thought leadership and generated $2.4M in new project pipeline over 6 months.</p>
+          <div class="grid grid-cols-3 gap-3 border-t border-white/5 pt-4">
+            <div><div class="font-bold text-lg">$2.4M</div><div class="text-white/40 text-xs">Pipeline</div></div>
+            <div><div class="font-bold text-lg">+186%</div><div class="text-white/40 text-xs">Organic</div></div>
+            <div><div class="font-bold text-lg">6mo</div><div class="text-white/40 text-xs">Timeline</div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Case 3 -->
+      <div class="case-card fade-up delay-2">
+        <div class="h-48 bg-gradient-to-br from-white/5 to-transparent flex items-center justify-center border-b border-white/5">
+          <span class="text-5xl">🛍️</span>
+        </div>
+        <div class="p-6">
+          <span class="tag mb-4 inline-block">E-Commerce</span>
+          <h3 class="font-bold text-lg mb-2">Lumera – 5.1x Meta ROAS</h3>
+          <p class="text-white/45 text-sm mb-5">Meta ad strategy overhaul with creative testing framework that scaled revenue from $40K to $200K/month in 4 months.</p>
+          <div class="grid grid-cols-3 gap-3 border-t border-white/5 pt-4">
+            <div><div class="font-bold text-lg">5.1x</div><div class="text-white/40 text-xs">ROAS</div></div>
+            <div><div class="font-bold text-lg">400%</div><div class="text-white/40 text-xs">Revenue</div></div>
+            <div><div class="font-bold text-lg">4mo</div><div class="text-white/40 text-xs">Timeline</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 11 — TESTIMONIALS
+====================================================== -->
+<section class="py-24 px-6 bg-[#0D0D0D]" aria-label="Testimonials">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="section-label fade-up mb-4">Client Stories</p>
+      <h2 class="heading-lg fade-up delay-1">What Our Clients <span class="gradient-text">Say About Us</span></h2>
+    </div>
+    <div class="testimonial-wrapper relative fade-in">
+      <div id="testi-track" class="testimonial-track">
+        <div class="testimonial-card">
+          <div class="flex mb-4">★★★★★</div>
+          <p class="text-white/65 text-sm leading-relaxed mb-6">"Arnico transformed our entire marketing operation. Within 3 months we saw a 300% increase in qualified leads. They don't just run campaigns — they build systems."</p>
+          <div class="flex items-center gap-3 border-t border-white/5 pt-5">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center font-bold text-sm">JR</div>
+            <div><div class="font-semibold text-sm">James Richardson</div><div class="text-white/40 text-xs">CEO, PeakFit Health</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="flex mb-4">★★★★★</div>
+          <p class="text-white/65 text-sm leading-relaxed mb-6">"The strategic depth Arnico brings is unmatched. They helped us build a brand that now commands premium pricing in a crowded market. Best investment we've made."</p>
+          <div class="flex items-center gap-3 border-t border-white/5 pt-5">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center font-bold text-sm">SK</div>
+            <div><div class="font-semibold text-sm">Sarah Kim</div><div class="text-white/40 text-xs">Founder, Lumera Beauty</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="flex mb-4">★★★★★</div>
+          <p class="text-white/65 text-sm leading-relaxed mb-6">"We went from invisible online to the #1 ranked company in our local market in under 6 months. The SEO and content strategy was absolutely exceptional."</p>
+          <div class="flex items-center gap-3 border-t border-white/5 pt-5">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center font-bold text-sm">MT</div>
+            <div><div class="font-semibold text-sm">Michael Torres</div><div class="text-white/40 text-xs">Director, BuildCo</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="flex mb-4">★★★★★</div>
+          <p class="text-white/65 text-sm leading-relaxed mb-6">"The team at Arnico truly understands performance marketing. Our Google Ads ROAS went from 1.8x to 6.2x within 60 days of them taking over. Incredible work."</p>
+          <div class="flex items-center gap-3 border-t border-white/5 pt-5">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center font-bold text-sm">LP</div>
+            <div><div class="font-semibold text-sm">Laura Patterson</div><div class="text-white/40 text-xs">CMO, TechNova Solutions</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="flex mb-4">★★★★★</div>
+          <p class="text-white/65 text-sm leading-relaxed mb-6">"What sets Arnico apart is they think like business owners, not marketers. Every recommendation is tied to revenue. They're a genuine growth partner."</p>
+          <div class="flex items-center gap-3 border-t border-white/5 pt-5">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center font-bold text-sm">RA</div>
+            <div><div class="font-semibold text-sm">Ryan Adler</div><div class="text-white/40 text-xs">COO, Vantage Group</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Controls -->
+    <div class="flex items-center justify-center gap-4 mt-10">
+      <button id="testi-prev" class="w-10 h-10 rounded-full border border-white/10 hover:border-white/30 flex items-center justify-center transition-colors" aria-label="Previous">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <div class="flex gap-2">
+        <button class="testi-dot w-2 h-2 rounded-full bg-white opacity-100 transition-opacity" aria-label="Slide 1"></button>
+        <button class="testi-dot w-2 h-2 rounded-full bg-white opacity-25 transition-opacity" aria-label="Slide 2"></button>
+        <button class="testi-dot w-2 h-2 rounded-full bg-white opacity-25 transition-opacity" aria-label="Slide 3"></button>
+      </div>
+      <button id="testi-next" class="w-10 h-10 rounded-full border border-white/10 hover:border-white/30 flex items-center justify-center transition-colors" aria-label="Next">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     SECTION 12 — FINAL CTA
+====================================================== -->
+<section class="py-28 px-6" aria-label="Call to Action">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="relative">
+      <div class="absolute inset-0 bg-white/[0.03] rounded-3xl blur-xl"></div>
+      <div class="relative glass-card p-16 rounded-3xl">
+        <p class="section-label fade-up mb-5">Ready to Grow?</p>
+        <h2 class="heading-lg fade-up delay-1 mb-6">Start Your<br/><span class="gradient-text">Growth Journey Today</span></h2>
+        <p class="text-white/55 mb-10 max-w-xl mx-auto fade-up delay-2">Get a free marketing audit worth $1,500. We'll analyse your current strategy and show you exactly where your biggest growth opportunities are.</p>
+        <div class="flex flex-wrap justify-center gap-4 fade-up delay-3">
+          <a href="contact.html" class="btn-primary">Get Your Free Audit
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="case-studies.html" class="btn-ghost">View Our Results</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+<footer class="bg-[#070707] border-t border-white/5 pt-16 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
+      <div class="lg:col-span-1">
+        <img src="Logos/Arnico Marketing Horizontal White logo.png" alt="Arnico Marketing" class="h-12 w-auto mb-5 opacity-90"/>
+        <p class="text-white/40 text-sm leading-relaxed mb-5">Performance-driven marketing that delivers measurable growth for ambitious businesses.</p>
+        <a href="mailto:arnicomarketing@gmail.com" class="text-white/50 hover:text-white text-sm transition-colors">arnicomarketing@gmail.com</a>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-5 text-white/80">Services</h4>
+        <ul class="space-y-3">
+          <li><a href="services.html#strategy">Digital Strategy</a></li>
+          <li><a href="services.html#branding">Branding & Design</a></li>
+          <li><a href="services.html#web">Web Development</a></li>
+          <li><a href="services.html#content">Content & Social</a></li>
+          <li><a href="services.html#ads">Ad Campaigns</a></li>
+          <li><a href="services.html#seo">SEO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-5 text-white/80">Company</h4>
+        <ul class="space-y-3">
+          <li><a href="about.html">About</a></li>
+          <li><a href="case-studies.html">Case Studies</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold text-sm mb-5 text-white/80">Connect</h4>
+        <ul class="space-y-3">
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter / X</a></li>
+        </ul>
+        <div class="mt-6">
+          <a href="contact.html" class="btn-primary text-xs py-3 px-5">Get Free Audit</a>
+        </div>
+      </div>
+    </div>
+    <div class="divider mb-6"></div>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/25">
+      <span>© 2025 Arnico Marketing. All rights reserved.</span>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-white/50 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-white/50 transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-to-top" class="fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full bg-white text-black flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300" aria-label="Back to top">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

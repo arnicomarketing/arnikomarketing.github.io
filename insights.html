@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Arnico Marketing Insights — expert articles on digital strategy, SEO, paid advertising, branding, and content marketing to help you grow your business."/>
+<title>Insights | Arnico Marketing</title>
+<link rel="icon" href="Logos/Arnico Marketing fav Icon Light gray.png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-[#0A0A0A] text-white antialiased">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-8">
+    <a href="index.html"><img src="Logos/Arnico Marketing Horizontal White logo.png" alt="Arnico Marketing" class="h-14 w-auto"/></a>
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="relative" data-dd="svc-dd"><button class="nav-link flex items-center gap-1">Services<svg class="w-3.5 h-3.5 opacity-50 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+      <div id="svc-dd" class="dropdown-menu"><a href="services.html#strategy" class="dropdown-item">Digital Strategy</a><a href="services.html#branding" class="dropdown-item">Branding & Design</a><a href="services.html#web" class="dropdown-item">Web Development</a><a href="services.html#content" class="dropdown-item">Content & Social</a><a href="services.html#ads" class="dropdown-item">Ad Campaigns</a><a href="services.html#seo" class="dropdown-item">SEO</a></div></div>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="case-studies.html" class="nav-link">Case Studies</a>
+      <a href="insights.html" class="nav-link active">Insights</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden md:inline-flex btn-primary text-sm py-3 px-6">Get Free Audit</a>
+      <button id="menu-toggle" class="lg:hidden text-white p-2"><svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu lg:hidden border-t border-white/5">
+    <div class="px-6 py-4 flex flex-col gap-1">
+      <a href="index.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Home</a>
+      <a href="services.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Services</a>
+      <a href="about.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">About</a>
+      <a href="case-studies.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Case Studies</a>
+      <a href="insights.html" class="py-3 text-white text-sm border-b border-white/5 block">Insights</a>
+      <a href="contact.html" class="py-3 text-white/80 text-sm border-b border-white/5 block">Contact</a>
+      <a href="contact.html" class="mt-4 btn-primary text-sm py-3 text-center justify-center">Get Free Audit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- S1: HERO -->
+<section class="hero-bg pt-40 pb-20 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <span class="tag fade-up">Knowledge Hub</span>
+    <h1 class="heading-xl fade-up delay-1 mt-6 mb-5">Marketing Insights for<br/><span class="gradient-text">Ambitious Growth</span></h1>
+    <p class="text-white/50 text-lg fade-up delay-2 max-w-2xl mx-auto">Strategy guides, case breakdowns, and actionable insights on digital marketing, SEO, paid ads, content, and more — written by practitioners.</p>
+  </div>
+</section>
+
+<!-- S2: CATEGORY FILTER -->
+<section class="py-10 px-6 border-b border-white/5">
+  <div class="max-w-7xl mx-auto flex flex-wrap gap-3 justify-center">
+    <button data-filter="all" class="bg-white text-black text-xs font-semibold px-5 py-2 rounded-full transition-all">All Topics</button>
+    <button data-filter="strategy" class="border border-white/10 text-gray-500 text-xs font-semibold px-5 py-2 rounded-full transition-all hover:text-white">Strategy</button>
+    <button data-filter="seo" class="border border-white/10 text-gray-500 text-xs font-semibold px-5 py-2 rounded-full transition-all hover:text-white">SEO</button>
+    <button data-filter="ads" class="border border-white/10 text-gray-500 text-xs font-semibold px-5 py-2 rounded-full transition-all hover:text-white">Paid Ads</button>
+    <button data-filter="content" class="border border-white/10 text-gray-500 text-xs font-semibold px-5 py-2 rounded-full transition-all hover:text-white">Content</button>
+    <button data-filter="branding" class="border border-white/10 text-gray-500 text-xs font-semibold px-5 py-2 rounded-full transition-all hover:text-white">Branding</button>
+    <button data-filter="social" class="border border-white/10 text-gray-500 text-xs font-semibold px-5 py-2 rounded-full transition-all hover:text-white">Social Media</button>
+  </div>
+</section>
+
+<!-- S3: FEATURED POST -->
+<section class="py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    <p class="section-label fade-up mb-6">Featured Article</p>
+    <div class="grid lg:grid-cols-2 gap-8 case-card overflow-hidden fade-in" data-cat="strategy">
+      <div class="h-72 lg:h-auto bg-gradient-to-br from-white/8 via-white/3 to-transparent flex flex-col items-start justify-end p-8">
+        <span class="tag mb-3">Digital Strategy</span>
+        <div class="text-white/20 text-xs">10 min read · April 2025</div>
+      </div>
+      <div class="p-8 flex flex-col justify-center">
+        <span class="section-label mb-3">Featured</span>
+        <h2 class="heading-md mb-4">The 2025 Marketing Playbook: How Top Brands Are Driving 4x Growth With Integrated Systems</h2>
+        <p class="text-white/50 text-sm leading-relaxed mb-6">We analysed 50+ high-growth brands to understand exactly what separates those driving exponential results from those spinning their wheels. The answer isn't a single tactic — it's a system.</p>
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">AM</div>
+          <div><div class="text-sm font-semibold">Alex Morgan</div><div class="text-white/40 text-xs">Chief Strategy Officer</div></div>
+        </div>
+        <a href="#" class="btn-primary self-start">Read Article <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S4-S9: BLOG GRID (main articles) -->
+<section class="pb-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Post 1 -->
+      <article class="blog-card fade-up" data-cat="seo">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">SEO</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">March 2025</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">7 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">Why Technical SEO Is Your Highest-ROI Marketing Investment in 2025</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">Core Web Vitals, crawlability, and site architecture changes that are compounding results for our clients at a fraction of paid media cost.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">RP</div><span class="text-xs text-white/50">Riley Park</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="blog-card fade-up delay-1" data-cat="ads">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">Paid Ads</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">March 2025</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">9 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">Meta Ads in 2025: The Creative Testing Framework That's Driving 5x ROAS</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">How we structure creative testing, budget allocation, and audience strategies to consistently outperform industry benchmarks on Meta.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">SW</div><span class="text-xs text-white/50">Sam Wilson</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 3 -->
+      <article class="blog-card fade-up delay-2" data-cat="branding">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">Branding</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">February 2025</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">6 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">Premium Brand Positioning: How to Charge More and Win More Clients</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">The psychological frameworks and visual identity principles behind brands that command premium pricing in competitive markets.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">JC</div><span class="text-xs text-white/50">Jamie Chen</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 4 -->
+      <article class="blog-card fade-up" data-cat="content">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">Content</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">February 2025</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">8 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">The Content Strategy That Generated 186% Organic Growth in 6 Months</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">Behind-the-scenes breakdown of the content pillar strategy, cluster model, and distribution system we used for BuildCo.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">RP</div><span class="text-xs text-white/50">Riley Park</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 5 -->
+      <article class="blog-card fade-up delay-1" data-cat="strategy">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">Strategy</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">January 2025</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">11 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">Why Your Marketing Isn't Working (And How a Data Audit Changes Everything)</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">The 12 most common marketing mistakes we uncover in every audit — and the exact fixes that produce immediate results.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">AM</div><span class="text-xs text-white/50">Alex Morgan</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 6 -->
+      <article class="blog-card fade-up delay-2" data-cat="social">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">Social Media</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">January 2025</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">5 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">LinkedIn in 2025: The B2B Social Strategy Quietly Generating Millions in Pipeline</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">Organic LinkedIn strategies that are outperforming paid channels for B2B brands — frameworks, post formats, and authority-building tactics.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">SW</div><span class="text-xs text-white/50">Sam Wilson</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 7 -->
+      <article class="blog-card fade-up" data-cat="ads">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">Paid Ads</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">December 2024</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">8 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">Google Ads for E-Commerce: The Bidding Strategy Behind 6x ROAS</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">From Smart Shopping to Performance Max — the technical setup and optimisation cadence that consistently exceeds 5x ROAS for our e-commerce clients.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">SW</div><span class="text-xs text-white/50">Sam Wilson</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 8 -->
+      <article class="blog-card fade-up delay-1" data-cat="seo">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">SEO</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">December 2024</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">10 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">Local SEO Domination: How to Own Google's Local Pack in 90 Days</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">The exact local SEO system we use to rank service businesses at the top of Google Maps and local search results — fast.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">RP</div><span class="text-xs text-white/50">Riley Park</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Post 9 -->
+      <article class="blog-card fade-up delay-2" data-cat="content">
+        <div class="blog-img h-44 bg-gradient-to-br from-white/8 via-white/3 to-transparent flex items-end p-5">
+          <span class="tag">Content</span>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center gap-2 mb-3"><span class="text-white/30 text-xs">November 2024</span><span class="text-white/20 text-xs">·</span><span class="text-white/30 text-xs">7 min read</span></div>
+          <h3 class="font-bold text-lg mb-3 leading-snug">Email Marketing That Actually Converts: The 5-Sequence Framework</h3>
+          <p class="text-white/45 text-sm leading-relaxed mb-5">The automation sequences, subject line formulas, and segmentation strategies behind email campaigns that drive 30%+ open rates and real revenue.</p>
+          <div class="flex items-center justify-between border-t border-white/5 pt-4">
+            <div class="flex items-center gap-2"><div class="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-xs font-bold">JC</div><span class="text-xs text-white/50">Jamie Chen</span></div>
+            <a href="#" class="text-white/40 hover:text-white text-xs transition-colors">Read →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+    <!-- Load More -->
+    <div class="text-center mt-12 fade-up">
+      <button class="btn-ghost" onclick="this.textContent='Coming soon — new articles weekly!'">Load More Articles</button>
+    </div>
+  </div>
+</section>
+
+<!-- S10: NEWSLETTER -->
+<section class="py-20 px-6 bg-[#0D0D0D] border-t border-white/5">
+  <div class="max-w-2xl mx-auto text-center">
+    <p class="section-label fade-up mb-4">Newsletter</p>
+    <h2 class="heading-lg fade-up delay-1 mb-5">Get Weekly <span class="gradient-text">Growth Insights</span></h2>
+    <p class="text-white/50 mb-8 fade-up delay-2">Join 2,500+ marketers and business owners getting our weekly breakdown of what's working in marketing right now — no fluff, just actionable strategy.</p>
+    <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto fade-up delay-3" onsubmit="event.preventDefault(); this.innerHTML='<p class=\'text-green-400 text-sm\'>✓ You\'re subscribed! Welcome to the community.</p>'">
+      <input type="email" placeholder="your@email.com" required class="form-input flex-1" aria-label="Email address"/>
+      <button type="submit" class="btn-primary whitespace-nowrap">Subscribe Free</button>
+    </form>
+    <p class="text-white/25 text-xs mt-4 fade-up delay-4">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<!-- S11: POPULAR TOPICS -->
+<section class="py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <p class="section-label fade-up mb-4">Browse By Topic</p>
+      <h2 class="heading-lg fade-up delay-1">Find What You <span class="gradient-text">Need to Know</span></h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-4">
+      <div class="glass-card p-6 fade-up flex items-center gap-4">
+        <div class="icon-box text-xl">🔍</div>
+        <div><h3 class="font-bold mb-0.5">SEO & Organic Growth</h3><p class="text-white/40 text-xs">12 articles</p></div>
+        <span class="ml-auto text-white/20">→</span>
+      </div>
+      <div class="glass-card p-6 fade-up delay-1 flex items-center gap-4">
+        <div class="icon-box text-xl">📈</div>
+        <div><h3 class="font-bold mb-0.5">Paid Advertising</h3><p class="text-white/40 text-xs">9 articles</p></div>
+        <span class="ml-auto text-white/20">→</span>
+      </div>
+      <div class="glass-card p-6 fade-up delay-2 flex items-center gap-4">
+        <div class="icon-box text-xl">📡</div>
+        <div><h3 class="font-bold mb-0.5">Digital Strategy</h3><p class="text-white/40 text-xs">8 articles</p></div>
+        <span class="ml-auto text-white/20">→</span>
+      </div>
+      <div class="glass-card p-6 fade-up delay-3 flex items-center gap-4">
+        <div class="icon-box text-xl">✍️</div>
+        <div><h3 class="font-bold mb-0.5">Content Marketing</h3><p class="text-white/40 text-xs">11 articles</p></div>
+        <span class="ml-auto text-white/20">→</span>
+      </div>
+      <div class="glass-card p-6 fade-up delay-4 flex items-center gap-4">
+        <div class="icon-box text-xl">✦</div>
+        <div><h3 class="font-bold mb-0.5">Branding & Design</h3><p class="text-white/40 text-xs">7 articles</p></div>
+        <span class="ml-auto text-white/20">→</span>
+      </div>
+      <div class="glass-card p-6 fade-up delay-5 flex items-center gap-4">
+        <div class="icon-box text-xl">📲</div>
+        <div><h3 class="font-bold mb-0.5">Social Media</h3><p class="text-white/40 text-xs">10 articles</p></div>
+        <span class="ml-auto text-white/20">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S12: CTA -->
+<section class="py-24 px-6 bg-[#070707]">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="section-label fade-up mb-5">Work With Us</p>
+    <h2 class="heading-lg fade-up delay-1 mb-5">Ready to Put These<br/><span class="gradient-text">Strategies to Work?</span></h2>
+    <p class="text-white/50 mb-10 fade-up delay-2">Let Arnico implement a custom growth strategy for your business. Get a free audit to start.</p>
+    <div class="flex flex-wrap justify-center gap-4 fade-up delay-3">
+      <a href="contact.html" class="btn-primary">Get Free Audit <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+      <a href="case-studies.html" class="btn-ghost">See Our Results</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#070707] border-t border-white/5 pt-16 pb-8 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-12 mb-14">
+      <div><img src="Logos/Arnico Marketing Horizontal White logo.png" alt="Arnico Marketing" class="h-12 w-auto mb-5 opacity-90"/><p class="text-white/40 text-sm leading-relaxed mb-4">Performance-driven marketing for ambitious businesses.</p><a href="mailto:arnicomarketing@gmail.com" class="text-white/50 hover:text-white text-sm">arnicomarketing@gmail.com</a></div>
+      <div><h4 class="font-semibold text-sm mb-5 text-white/80">Services</h4><ul class="space-y-3"><li><a href="services.html#strategy">Digital Strategy</a></li><li><a href="services.html#branding">Branding</a></li><li><a href="services.html#web">Web Development</a></li><li><a href="services.html#ads">Ad Campaigns</a></li><li><a href="services.html#seo">SEO</a></li></ul></div>
+      <div><h4 class="font-semibold text-sm mb-5 text-white/80">Company</h4><ul class="space-y-3"><li><a href="about.html">About</a></li><li><a href="case-studies.html">Case Studies</a></li><li><a href="insights.html">Insights</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4 class="font-semibold text-sm mb-5 text-white/80">Connect</h4><ul class="space-y-3"><li><a href="#">LinkedIn</a></li><li><a href="#">Instagram</a></li><li><a href="#">Facebook</a></li></ul></div>
+    </div>
+    <div class="divider mb-6"></div>
+    <div class="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-white/25">
+      <span>© 2025 Arnico Marketing. All rights reserved.</span>
+      <div class="flex gap-6"><a href="#" class="hover:text-white/50">Privacy Policy</a><a href="#" class="hover:text-white/50">Terms</a></div>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" class="fixed bottom-8 right-8 z-50 w-11 h-11 rounded-full bg-white text-black flex items-center justify-center shadow-lg hover:scale-110 transition-all" aria-label="Back to top"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg></button>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
